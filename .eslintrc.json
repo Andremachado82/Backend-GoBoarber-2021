@@ -1,7 +1,8 @@
 {
   "env": {
     "es2021": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "extends": [
     "standard"
@@ -17,5 +18,17 @@
   "rules": {
     "eslint-disable space-before-function-paren": true,
     "eslint-disable camelcase": true
-  }
+  },
+  "@typescript-eslint/naming-convention": [
+    "error",
+    {
+      "selector": "interface",
+      "prefix": [
+        "I"
+      ],
+      "format": [
+        "PascalCase"
+      ]
+    }
+  ]
 }
